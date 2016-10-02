@@ -1,0 +1,5 @@
+<%= form_for @creature do |f| %>
+	<%= f.text_field :name %>
+	<%= f.text_area :description %>
+	<%= f.submit "Save Creature", class: "btn btn-block btn-default"%>
+<% end %>

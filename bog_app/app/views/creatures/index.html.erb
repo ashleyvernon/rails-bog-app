@@ -1,5 +1,5 @@
 <h1>This is a Bog App!!!!</h1>
 <% @creatures.each do |creature| %>
-	<h4><%= link_to creature.name, creatures_path(creature) %></h4>
+	<h4><%= link_to creature.name, creature_path(creature) %></h4>
 	<p><strong>Description:</strong><%= creature.description %></p>
 <% end %>
