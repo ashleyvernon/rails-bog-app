@@ -1,6 +1,6 @@
 <h1>Edit Creature</h1>
 <hr>
-<%= form_for :creature, url: "/creatures", method: "post" do |f| %>
+<%= form_for @creature do |f| %>
 	<div class="form-group">
 		<%= f.text_field :name, class: "form-control", placeholder: "Name", autofocus: true %>
 	</div>
