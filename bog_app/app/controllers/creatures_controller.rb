@@ -6,20 +6,22 @@ class CreaturesController < ApplicationController
 
 	def new
 		@creature = Creature.new
+
+		render :new
 	end
 
 	def create
 		creature = Creature.new(creature_params)
 		if creature.save
-			redirect_to creature_path(@creature)
+			redirect_to creature_path(creature)
 		end
-
-		render :show
 	end
 
 	def show
 		creature_id = params[:id]
 		@creature = Creature.find_by_id(creature_id)
+
+		render :show
 	end
 
 	def edit

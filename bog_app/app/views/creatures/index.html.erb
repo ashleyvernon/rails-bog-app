@@ -3,3 +3,5 @@
 	<h4><%= link_to creature.name, creature_path(creature) %></h4>
 	<p><strong>Description:</strong><%= creature.description %></p>
 <% end %>
+
+<%= link_to "Add New Creature", new_creature_path, class: "btn btn-default" %>
