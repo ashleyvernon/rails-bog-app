@@ -1,5 +1,5 @@
 <% @creatures.each do |creature| %>
-<%= link_to creature.name, creatures_path(creature) %>
+<%= link_to creature.name, creature_path(creature) %>
 <p>Description:</p><%= creature.description %>
 <% end %>
 

@@ -9,7 +9,7 @@ class CreaturesController < ApplicationController
 	end
 
 	def create
-		creature = Creature.new(creature_params)
+t		creature = Creature.new(creature_params)
 		if creature.save
 			redirect_to creature_path(creature)
 		end
