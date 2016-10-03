@@ -1,0 +1,5 @@
+<%= @creature.name %>
+<%= @creature.description %>
+
+<%= link_to "Edit", edit_creature_path(@creature) %>
+<%= button_to "Delete", @creature, method: :delete %>
